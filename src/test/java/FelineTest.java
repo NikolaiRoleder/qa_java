@@ -1,5 +1,6 @@
 import com.example.Feline;
 import org.junit.Test;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -25,9 +26,9 @@ public class FelineTest {
 
     @Test
     public void checkGetKittensWithoutParam() throws Exception {
-    int expectedCount = 1;
-    int actualCount = feline.getKittens();
-    assertEquals(expectedCount, actualCount);
+        int expectedCount = 1;
+        int actualCount = feline.getKittens();
+        assertEquals(expectedCount, actualCount);
     }
 
     @Test

@@ -42,11 +42,11 @@ public class LionTest {
     //тест с моком
     @Test
     public void checkLionFood() throws Exception {
-    Lion lion = new Lion(mockfeline);
-    List<String> expectedFood = Arrays.asList("Животные","Птицы","Рыба");
-    Mockito.when(mockfeline.getFood("Хищник")).thenReturn(expectedFood);
-    List<String> actualFood = lion.getFood();
-    assertEquals(expectedFood, actualFood);
+        Lion lion = new Lion(mockfeline);
+        List<String> expectedFood = Arrays.asList("Животные", "Птицы", "Рыба");
+        Mockito.when(mockfeline.getFood("Хищник")).thenReturn(expectedFood);
+        List<String> actualFood = lion.getFood();
+        assertEquals(expectedFood, actualFood);
     }
 
 }
